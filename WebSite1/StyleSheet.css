@@ -1,0 +1,131 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* pagina inteira */
+* {
+    font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* fitros */
+.btn-filtro-ativo {
+    background-color: #f0fdf4;
+    color: #15803d;
+    padding: 4px;
+    text-decoration: none;
+    border: 2px solid #c4ebd2;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.btn-filtro-inativo {
+    background-color: #;
+    color: #3f7472;
+    padding: 4px;
+    text-decoration: none;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* card */
+.card-falecido {
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .card-falecido:hover {
+        background-color: #f8f8f8;
+        border: 2px solid #f8f8f8;
+    }
+
+.data-falecido {
+    color: #7b7b7b;
+    font-size: 1.1rem;
+}
+
+/* vela do card */
+.velas-acesas {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.vela-icone {
+    background-color: #eaeaea;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.vela-numero {
+    margin-top: -10px;
+    background-color: #000000;
+    color: white;
+    width: 45px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* botões do card */
+.btn-acender-vela {
+    background-color: #ffeee2;
+    color: #dd5e00;
+    border: 1px solid #ffeee2;
+}
+
+    .btn-acender-vela:hover {
+        border: 1px solid #ff6f00;
+        background-color: #ffeee2;
+        color: #dd5e00;
+    }
+
+.btn-escrever-prece {
+    background-color: #d7f4ff;
+    color: #006b94;
+    border: 1px solid #d7f4ff;
+    padding: 8px;
+    font-size: 15px;
+}
+
+    .btn-escrever-prece:hover {
+        background-color: #d7f4ff;
+        color: #006b94;
+        border: 1px solid #006b94;
+    }
+
+/* bg e velona */
+.bg-velona {
+    background: url("imgs/bg.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.velona-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    max-height: 80vh;
+}

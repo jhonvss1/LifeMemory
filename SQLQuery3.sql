@@ -1,0 +1,5 @@
+﻿CREATE TABLE UsuarioVitima(
+	IdUsuarioVitima INT NOT NULL IDENTITY(1,1) PRIMARY KEY, 
+	IdUsuario INT NOT NULL FOREIGN KEY REFERENCES Usuario(IdUsuario),
+	IdVitima INT NOT NULL FOREIGN KEY REFERENCES Vitima(IdVitima)
+)
